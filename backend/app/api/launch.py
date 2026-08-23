@@ -3,8 +3,10 @@ from pydantic import BaseModel
 
 from backend.app.agent.launch_agent import run_launch_agent
 
-
-router = APIRouter(prefix="/api/launch", tags=["Launch Intelligence"])
+router = APIRouter(
+    prefix="/api/launch",
+    tags=["Launch Intelligence"],
+)
 
 
 class LaunchRequest(BaseModel):
